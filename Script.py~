@@ -1,0 +1,9 @@
+import os
+inp = input("Input the command you would like to run")
+if inp == "z0z": 
+	open('CommandOutput.txt','w').close()
+else: 
+	os.system("echo 'The Command run by the user was: '" + inp + " >> CommandOutput.txt")
+	os.system("echo 'The terminal output was: " >> CommandOutput.txt")
+	os.system(inp + " >> CommandOutput.txt")
+
